@@ -1,12 +1,12 @@
 <?php
-$key = "1cdbb159-0d61-42df-9d4c-0785416f1cda";
+$key = " ";
 require_once('jsonrpcphp/includes/jsonRPCClient.php');
 $bitcoin ="";
 
 $port = "";
 if (!isset($_GET['type'])) {
     if ($_GET['type'] == "bitcoin") {
-        $port = 8332;
+        $port = 18332;
     }
     if ($_GET['type'] == "litecoin") {
         $port = 9332;
