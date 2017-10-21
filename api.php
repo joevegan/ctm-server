@@ -1,4 +1,7 @@
 <?php
+
+header("Access-Control-Allow-Origin: *");
+
 $key = " ";
 require_once('jsonrpcphp/includes/jsonRPCClient.php');
 $bitcoin ="";
