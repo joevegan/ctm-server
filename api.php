@@ -2,7 +2,7 @@
 
 header("Access-Control-Allow-Origin: *");
 
-$key = " ";
+$key = "63f13c9f-570a-4bf4-b46b-3d4ee7553656";
 require_once('jsonrpcphp/includes/jsonRPCClient.php');
 $bitcoin ="";
 
@@ -19,7 +19,7 @@ if (!isset($_GET['type'])) {
     }
 }
 
-$bitcoin = new jsonRPCClient('http://bitcoinrpc:EuiuZEVwNBngVzZoer1GpVWADESf91gCFXw3N1Uxa1YN@127.0.0.1:'.$port.'/');
+$bitcoin = new jsonRPCClient('http://bitcoinrpc:rpcuser:test123@23.249.72.113:'.$port.'/');
 
 if (!isset($_GET['key'])) {
     $data = array("error"=>1,"errormsg"=>"Invalid Key","time"=>time());
